@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'StylesheetBase.css' %}">
+    <script defer src= "https://use.fontawesome.com/releases/v5.0.7/js/all.js">
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+    <script>
+        function openSlideMenu(){
+          document.getElementById('menu').style.width = '209px'
+          document.getElementById('content').style.marginLeft = '0'
+        }
+        function closeSlideMenu(){
+          document.getElementById('menu').style.width = '0'
+          document.getElementById('content').style.marginLeft = '0'
+        }
+    </script>
+
+    <title>
+        {% block title %}
+
+        {% endblock %}
+    </title>
+</head>
+<body>
+  <div class="Main-Rect">
+
+      <div class="Left-Rect">
+
+        <div id='content'>
+            <span class="slide">
+              <a href="#" onclick="openSlideMenu()">
+                <i class="fas fa-bars"></i>
+            </span>
+            <a href="#" class="close" onclick="closeSlideMenu()">
+            <div id="menu" class="nav">
+                <i class="fas fa-times"></i>
+              </a>
+              <div class="inside">
+                <a href="http://127.0.0.1:8000/">Homepage</a>
+                <a href="http://127.0.0.1:8000/signup">Sign-up</a>
+                <a href="http://127.0.0.1:8000/login">Log-in</a>
+              </div>
+            </div>
+        </div>
+
+      </div>
+      <div class="Welcome">
+      </div>
+  </div>
+{% block content %}
+
+{% endblock %}
+    
+</body>
+</html>

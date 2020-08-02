@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'StylesheetLogin.css' %}">
+
+{% block title %}
+    Login
+{% endblock %}
+
+{% block content %}
+  <div class="Welcome-upfont">
+    Log-in
+  </div>
+  hello
+
+  <form class="Right-Rect">
+              <div class="Sign-up"></div>
+              <div class="Sign-upfont">Sign-up</div>
+
+              <div class="Username"></div>
+
+              <div class="Usernamefont">
+                <input class="input" type="text" name="Username">
+              </div>
+
+              <div class="Email"></div>
+              <div class="Emailfont">
+                <input class="input" type="text" name="Email">
+              </div>
+
+              <div class="Password"></div>
+              <div class="Passwordfont">
+                <input class="input" type="password" name="Password">
+              </div>
+
+              <div class="ConfirmPassword"></div>
+              <div class="ConfirmPasswordfont">
+                <input class="input" type="password" name="ConfirmPassword">
+              </div>
+              <input class="button"  type="submit" value="Submit">
+            </form>
+
+{% endblock %}

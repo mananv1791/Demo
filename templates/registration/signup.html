@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Signup
+{% endblock %}
+
+{% block content %}
+
+    <div class="Welcome-upfont">
+        Sign-up
+    </div>
+
+    <form method="get">
+    <label class="PhoneNumber">Phone Number</label>
+
+    <input id="PhoneNumber" name="PhoneNumber" type="number" placeholder="Phone number here">
+    <br>
+    <br>
+
+    <label class="email">E-mail: </label>
+    <input id="emailAdd" name="emailAdd" type="email" placeholder="Your E-mail here">
+    <div >
+      <button class="button" type="submit">Submit</button>
+    </div>
+
+</form>
+
+{% endblock %}

@@ -1,0 +1,95 @@
+body{
+    background-color: #282828;
+    overflow-x: hidden;
+}
+
+.Main-Rect {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: #282828;
+
+}
+
+.Left-Rect {
+  position: absolute;
+  left: 0%;
+  right: 88.07%;
+  top: 0%;
+  bottom: 0%;
+
+}
+
+.Welcome-upfont {
+  position: absolute;
+  left: 35.42%;
+  right: 49.84%;
+  top: 7.31%;
+  bottom: 79.91%;
+  font-family: Satisfy,cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 138px;
+  color: #6E48FF;
+}
+
+.nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top:0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.7s;
+  background: linear-gradient(270.35deg, #282828 -5.2%, rgba(68, 49, 141, 0) 98.57%), #44318D;
+}
+
+.close{
+  z-index: 2px;
+}
+
+.nav a {
+  height: 50px;
+  font-family: Satisfy, cursive;
+  color: black;
+  display: block;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.nav a:hover
+{
+  background-color: #282828;
+  color: white;
+  transition: 2s;
+}
+
+.nav .close {
+  position: absolute;
+  top: 0;
+  right:10px;
+}
+
+.inside {
+  margin-top: 150px;
+}
+
+.slide a{
+  color: #6E48FF;
+  font-size: 37px;
+}
+
+#content {
+
+  padding: 20px;
+  transition: marginLeft:0.7s;
+  overflow: hidden;
+}
